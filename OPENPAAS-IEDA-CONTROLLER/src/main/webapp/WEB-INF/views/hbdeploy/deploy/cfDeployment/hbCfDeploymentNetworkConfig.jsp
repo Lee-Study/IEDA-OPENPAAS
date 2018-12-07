@@ -367,33 +367,33 @@ function deleteHbCfDeploymentNetworkConfigInfo(id, networkName){
          html+= "</div>";
          html+= body_div;
          html+= field_div_label + "서브넷 아이디" + "</label>"; 
-         html+="<div>"+"<input class='form-control' name='subnetId_"+index+"'" + text_style +" placeholder='서브넷 아이디를 입력하세요.'/>"+"</div></div>";
+         html+="<div>"+"<input class='form-control' name='subnetId_"+index+"'" + text_style +" style='width: 320px;' placeholder='서브넷 아이디를 입력하세요.'/>"+"</div></div>";
          
          html+= field_div_label + "보안 그룹" + "</label>"; 
-         html+= "<div>"+"<input class='form-control' name='securityGroup_"+index+"'" + text_style +" placeholder='예) bosh-security, cf-security'/>"+"</div></div>";
+         html+= "<div>"+"<input class='form-control' name='securityGroup_"+index+"'" + text_style +" style='width: 320px;' placeholder='예) bosh-security, cf-security'/>"+"</div></div>";
          
          html+= field_div_label + "가용 영역" + "</label>"; 
-         html+= "<div>"+"<input class='form-control' name='availabilityZone_"+index+"'" + text_style +" placeholder='예) us-west-2'/>"+"</div></div>";
+         html+= "<div>"+"<input class='form-control' name='availabilityZone_"+index+"'" + text_style +" style='width: 320px;' placeholder='예) us-west-2'/>"+"</div></div>";
          html+= field_div_label + "서브넷 범위" + "</label>"; 
-         html+= "<div>"+"<input class='form-control' name='subnetRange_"+index+"'" + text_style +" placeholder='예) 10.0.0.0/24'/>" + "</div></div>";
+         html+= "<div>"+"<input class='form-control' name='subnetRange_"+index+"'" + text_style +" style='width: 320px;' placeholder='예) 10.0.0.0/24'/>" + "</div></div>";
          
          html+= field_div_label + "게이트웨이" + "</label>"; 
-         html+= "<div>"+ "<input class='form-control' name='subnetGateway_"+index+"'" + text_style +" placeholder='예) 10.0.0.1'/>" + "</div></div>";
+         html+= "<div>"+ "<input class='form-control' name='subnetGateway_"+index+"'" + text_style +" style='width: 320px;' placeholder='예) 10.0.0.1'/>" + "</div></div>";
          
          html+= field_div_label + "DNS" + "</label>"; 
-         html+= "<div>"+ "<input class='form-control' name='subnetDns_"+index+"'" + text_style +" placeholder='예) 8.8.8.8'/>" + "</div></div>";
+         html+= "<div>"+ "<input class='form-control' name='subnetDns_"+index+"'" + text_style +" style='width: 320px;' placeholder='예) 8.8.8.8'/>" + "</div></div>";
         
          html+= field_div_label + "IP할당 제외 대역" + "</label>"; 
          html+=     "<div>";
-         html+=         "<input class='form-control' name='subnetReservedFrom_"+index+"' type='text' style='display:inline-block; width: 110px; margin-left: 20px;' placeholder='예) 10.0.0.10' />";
+         html+=         "<input class='form-control' name='subnetReservedFrom_"+index+"' type='text' style='display:inline-block; width: 147px; margin-left: 20px;' placeholder='예) 10.0.0.10' />";
          html+=         "<span style='width: 4%; text-align: center;'>&nbsp;&ndash; &nbsp;</span>";
-         html+=         "<input class='form-control' name='subnetReservedTo_"+index+"' type='text' style='display:inline-block; width: 110px;' placeholder='예) 10.0.0.20' />";
+         html+=         "<input class='form-control' name='subnetReservedTo_"+index+"' type='text' style='display:inline-block; width: 147px;' placeholder='예) 10.0.0.20' />";
          html+=     "</div></div>";
          
          html+= field_div_label + "IP할당 대역(최소 20개)" + "</label>"; 
-         html+=     "<div>"+"<input class='form-control' name='subnetStaticFrom_"+index+"' type='text' style='display:inline-block; width: 110px; margin-left: 20px;' placeholder='예) 10.0.0.10' />";
+         html+=     "<div>"+"<input class='form-control' name='subnetStaticFrom_"+index+"' type='text' style='display:inline-block; width: 147px; margin-left: 20px;' placeholder='예) 10.0.0.10' />";
          html+=         "<span style='width: 4%; text-align: center;'>&nbsp;&ndash; &nbsp;</span>";
-         html+=         "<input class='form-control' name='subnetStaticTo_"+index+"' type='text' style='display:inline-block; width: 110px;' placeholder='예) 10.0.0.20'/>";
+         html+=         "<input class='form-control' name='subnetStaticTo_"+index+"' type='text' style='display:inline-block; width: 147px;' placeholder='예) 10.0.0.20'/>";
          html+=     "</div>";
          html+= "</div></div></div>";
          $(".w2ui-msg-body "+ div).show();
