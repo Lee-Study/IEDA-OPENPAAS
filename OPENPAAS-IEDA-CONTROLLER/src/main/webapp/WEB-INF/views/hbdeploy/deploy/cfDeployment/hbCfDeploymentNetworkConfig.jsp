@@ -286,7 +286,7 @@ function registHbCfDeploymentNetworkConfigInfo(){
             networkName            : $("input[name='networkName']").val(),
             networkInfoList        : networkInfoList
     }
-    
+    console.log(networkConfigInfo);
     $.ajax({
         type : "PUT",
         url : "/deploy/hbCfDeployment/networkConfig/save",
