@@ -357,7 +357,7 @@ function deleteHbCfDeploymentNetworkConfigInfo(id, networkName){
      
      var body_div= "<div class='panel-body'>";
      var field_div_label="<div class='w2ui-field'>"+"<label style='width:40%;text-align: left;padding-left: 20px;'>";
-     var text_style="type='text' style='width: 250px; margin-left: 20px;'";
+     var text_style="type='text' style='width: 320px; margin-left: 20px;'";
      var html= "<div class='panel' style='margin-top:2%;'>";
          html+= "<div  style='position:relative; margin-left:15px; margin-top:10px;'>";
          html+=    "<b>Internal 네트워크</b>";
@@ -367,21 +367,21 @@ function deleteHbCfDeploymentNetworkConfigInfo(id, networkName){
          html+= "</div>";
          html+= body_div;
          html+= field_div_label + "서브넷 아이디" + "</label>"; 
-         html+="<div>"+"<input class='form-control' name='subnetId_"+index+"'" + text_style +" style='width: 320px;' placeholder='서브넷 아이디를 입력하세요.'/>"+"</div></div>";
+         html+="<div>"+"<input class='form-control' name='subnetId_"+index+"'" + text_style +" placeholder='서브넷 아이디를 입력하세요.'/>"+"</div></div>";
          
          html+= field_div_label + "보안 그룹" + "</label>"; 
-         html+= "<div>"+"<input class='form-control' name='securityGroup_"+index+"'" + text_style +" style='width: 320px;' placeholder='예) bosh-security, cf-security'/>"+"</div></div>";
+         html+= "<div>"+"<input class='form-control' name='securityGroup_"+index+"'" + text_style +" placeholder='예) bosh-security, cf-security'/>"+"</div></div>";
          
          html+= field_div_label + "가용 영역" + "</label>"; 
-         html+= "<div>"+"<input class='form-control' name='availabilityZone_"+index+"'" + text_style +" style='width: 320px;' placeholder='예) us-west-2'/>"+"</div></div>";
+         html+= "<div>"+"<input class='form-control' name='availabilityZone_"+index+"'" + text_style +" placeholder='예) us-west-2'/>"+"</div></div>";
          html+= field_div_label + "서브넷 범위" + "</label>"; 
-         html+= "<div>"+"<input class='form-control' name='subnetRange_"+index+"'" + text_style +" style='width: 320px;' placeholder='예) 10.0.0.0/24'/>" + "</div></div>";
+         html+= "<div>"+"<input class='form-control' name='subnetRange_"+index+"'" + text_style +" placeholder='예) 10.0.0.0/24'/>" + "</div></div>";
          
          html+= field_div_label + "게이트웨이" + "</label>"; 
-         html+= "<div>"+ "<input class='form-control' name='subnetGateway_"+index+"'" + text_style +" style='width: 320px;' placeholder='예) 10.0.0.1'/>" + "</div></div>";
+         html+= "<div>"+ "<input class='form-control' name='subnetGateway_"+index+"'" + text_style +" placeholder='예) 10.0.0.1'/>" + "</div></div>";
          
          html+= field_div_label + "DNS" + "</label>"; 
-         html+= "<div>"+ "<input class='form-control' name='subnetDns_"+index+"'" + text_style +" style='width: 320px;' placeholder='예) 8.8.8.8'/>" + "</div></div>";
+         html+= "<div>"+ "<input class='form-control' name='subnetDns_"+index+"'" + text_style +" placeholder='예) 8.8.8.8'/>" + "</div></div>";
         
          html+= field_div_label + "IP할당 제외 대역" + "</label>"; 
          html+=     "<div>";
